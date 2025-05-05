@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            padding: 20px;
+            border: 1px solid #0f0;
+            border-radius: 5px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input,
+        .login-form button {
+            padding: 10px;
+            margin: 5px 0;
+            background: transparent;
+            border: 1px solid #0f0;
+            border-radius: 5px;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .login-form input::placeholder {
+            color: #0f0;
+        }
+
+        .login-form button {
+            cursor: pointer;
+            background-color: #0f0;
+            color: #000;
+        }
+
+        .login-form button:hover {
+            background-color: #0a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Hacker's Portal</h2>
+        <form class="login-form" action="register" method="POST">
+            <input type="text" placeholder="Username" name="user" required="">
+            <input type="password" placeholder="Password" name="pwd" required="">
+            <button type="submit" onclick="document.forms[0].submit();">register</button>
+        </form>
+    </div>
+</body>
+</html>

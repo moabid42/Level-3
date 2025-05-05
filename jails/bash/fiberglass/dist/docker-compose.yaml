@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  vuln-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vuln_container
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
